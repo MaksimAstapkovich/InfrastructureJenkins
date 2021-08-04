@@ -18,5 +18,7 @@ RUN chmod -R 777 /var/jenkins_home
 
 RUN /usr/local/bin/install-plugins.sh $(cat /var/jenkins_home/plugins.txt | tr '\n' ' ')
 
+RUN apt-get update
+RUN apt get install docker.io -y
 EXPOSE 50000
 EXPOSE 8080
