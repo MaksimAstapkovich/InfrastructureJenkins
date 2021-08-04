@@ -1,0 +1,11 @@
+configuration-as-code
+matrix-auth
+job-dsl
+uno-choice
+artifactory
+multiple-scms
+parameterized-trigger
+git
+backup
+pipeline-stage-step
+workflow-aggregator
