@@ -25,11 +25,11 @@ sudo usermod -a -G docker ec2-user
 
 cd /home/ubuntu
 
-sudo -u ubuntu git clone  https://${gitLogin}:${gitPass}@git@github.com:MaksimAstapkovich/InfrastructureJenkins.git
+sudo -u ubuntu git clone  https://${gitLogin}:${gitPass}@github.com/MaksimAstapkovich/InfrastructureJenkins.git
 
 sed -i "s/lolol/${gitPass}" ./scripts/scr_02_cred.groovy 
 
-cd stack-development/container
+cd InfrastructureJenkins/container
 
 var=`docker ps | grep jenkins | cut -d" " -f1`
 

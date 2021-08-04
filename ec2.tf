@@ -1,5 +1,5 @@
 resource "aws_security_group" "sg"{
-  name = "MySg_FOR_JENK"
+  name = "MySg_FOR_JEN"
   
   ingress{
     from_port = 8080
