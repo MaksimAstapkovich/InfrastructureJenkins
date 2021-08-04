@@ -33,6 +33,8 @@ cd InfrastructureJenkins/container
 
 var=`docker ps | grep jenkins | cut -d" " -f1`
 
+echo $var > aAADAD 
+
 docker exec -it $var apt-get update
 
 docker exec -it $var apt-get install -y docker.io
