@@ -33,7 +33,7 @@ cd InfrastructureJenkins/container
 
 var=`docker ps | grep jenkins | cut -d" " -f1`
 
-docker exec -it $$var apt-get update && apt-get install -y docker.io 
+docker exec -it $var apt-get update && apt-get install -y docker.io 
 
 docker-compose up -d
 
