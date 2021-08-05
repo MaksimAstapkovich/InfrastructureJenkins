@@ -33,7 +33,7 @@ cd InfrastructureJenkins/container
 
 var=`docker ps | grep jenkins | cut -d" " -f1`
 
-echo MY_IP_I `curl https://ipecho.net/plain ` > ./envv
+echo MY_IP_I=`curl https://ipecho.net/plain ` > ./envv
 
 docker-compose up -d
 
