@@ -30,8 +30,8 @@ sudo -u ubuntu git clone  https://${gitLogin}:${gitPass}@github.com/MaksimAstapk
 
 cd InfrastructureJenkins/container
 
-sed -i "s/lolol/${gitPass}" ./scripts/scr_02_cred.groovy
-sed -i "s/kokok/${gitPass}" ./scripts/scr_02_cred.groovy
+sed -i "s/lolol/${gitPass}/" ./scripts/scr_02_cred.groovy
+sed -i "s/kokok/${gitPass}/" ./scripts/scr_02_cred.groovy
 
 var=`docker ps | grep jenkins | cut -d" " -f1`
 
