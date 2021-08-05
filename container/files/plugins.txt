@@ -9,3 +9,7 @@ git
 backup
 pipeline-stage-step
 workflow-aggregator
+docker-slaves
+docker-plugin
+docker-workflow
+docker-java-api
