@@ -21,6 +21,15 @@ usernameAndPass = new UsernamePasswordCredentialsImpl(
   "MaksimAstapkovich",
   "lolol"
 )
+usernameAndPas = new UsernamePasswordCredentialsImpl(
+  CredentialsScope.GLOBAL,
+  "max_dh",
+  "max_dh",
+  "mastapkovich",
+  "kokok"
+)
+
 
 store.addCredentials(domain, usernameAndPassword)
 store.addCredentials(domain, usernameAndPass)
+store.addCredentials(domain, usernameAndPas)
